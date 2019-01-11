@@ -71,6 +71,7 @@ $height: 499.094px;
 }
 
 .tile {
+  float: left;
   position: relative;
   width: $width;
   height: $height;

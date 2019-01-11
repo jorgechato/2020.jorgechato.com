@@ -10,7 +10,7 @@
     </div>
 
     <Parallax :thumbnail="thumbnail" class="logo__bottom">
-    <p slot="content">{{ info }}</p>
+    <p slot="content">{{ info | capitalize }}</p>
     </Parallax>
 
     <div class="logo__bottom front">
@@ -29,10 +29,10 @@ export default {
     Parallax
   },
   data: () => ({
-    //thumbnail: "https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.wonderfulengineering.com%2Fwp-content%2Fuploads%2F2016%2F01%2FTokyo-Wallpaper-12.jpg&f=1",
-    //info: "Tokio",
-    thumbnail: "https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.lastminute.com%2Fhotels%2Fimg%2Fcity%2FZaragoza-ES.jpg&f=1",
-    info: "Zaragoza",
+    thumbnail: "http://www.technocrazed.com/wp-content/uploads/2015/12/Japan-wallpaper-20.jpg",
+    info: "Tokio",
+    //thumbnail: "https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.lastminute.com%2Fhotels%2Fimg%2Fcity%2FZaragoza-ES.jpg&f=1",
+    //info: "Zaragoza",
   }),
 }
 </script>
@@ -47,6 +47,7 @@ export default {
   display: block;
   text-decoration: none;
   color: white;
+  width: 400px;
 
   .circle {
     width: .8em;

@@ -18,7 +18,7 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description }
-    ]
+    ],
   },
 
   /*
@@ -38,11 +38,30 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    "~plugins/strings.js",
   ],
 
   /*
   ** Nuxt.js modules
   */
   modules: [
+    ['nuxt-fontawesome', {
+        component: 'fa',
+        imports: [
+          {
+            set: '@fortawesome/free-solid-svg-icons',
+            icons: ['faHeart']
+          },
+          {
+            set: '@fortawesome/fontawesome-free-brands',
+            icons: [
+              'faYoutube',
+              'faSpotify',
+              'faItunes',
+              'faInstagram',
+            ]
+          }
+        ]
+      }],
   ],
 }

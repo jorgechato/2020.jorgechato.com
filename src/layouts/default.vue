@@ -5,15 +5,19 @@
 
     <nuxt/>
 
+    <Footer />
+
   </div>
 </template>
 
 <script>
 import Logo from '~/components/Logo/Logo'
+import Footer from '~/components/Footer'
 
 export default {
   components: {
     Logo,
+    Footer,
   }
 }
 </script>

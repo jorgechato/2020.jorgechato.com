@@ -1,4 +1,5 @@
 <template>
+  <section>
     <div class="buckets">
 
       <Bucket
@@ -12,7 +13,7 @@
         thumbnail="http://monthlymale.com/wp-content/uploads/2016/10/casey-neistat-vlog-gear.jpg"
         />
       <Bucket
-        name="Merch"
+        name="merch"
         description="Muy pronto"
         thumbnail="https://i.ytimg.com/vi/GcbsIv3QdFs/maxresdefault.jpg"
         />
@@ -23,6 +24,7 @@
         />
 
     </div>
+  </section>
 </template>
 
 <script>
@@ -37,12 +39,11 @@ export default {
 
 <style lang="scss" scoped>
 
-.buckets {
+section{
+  margin: auto;
   display: flex;
 	align-items: center;
 	justify-content: center;
-  margin: auto;
-  width: fit-content;
 }
 
 </style>

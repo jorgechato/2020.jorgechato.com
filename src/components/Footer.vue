@@ -1,14 +1,14 @@
 <template>
-  <div class="footer">
+  <div class="footer__net">
 
-    <spam class="limit">{</spam>
+    <span class="limit">{</span>
 
     <a href="//www.youtube.com/channel/UCvYE-kjfF_fkg6akr5DNvdw?view_as=subscriber"><fa :icon="['fab', 'youtube']" /></a>
     <a href="//open.spotify.com/show/6HPGljWQbxmnxqhWNNMUpX"><fa :icon="['fab', 'spotify']" /></a>
-    <a href=""><fa :icon="['fab', 'itunes']" /></a>
+    <a href="//itunes.apple.com/es/podcast/code/id1440641047?l=en&mt=2"><fa :icon="['fab', 'itunes']" /></a>
     <a href="//www.instagram.com/jorgechato"><fa :icon="['fab', 'instagram']" /></a>
 
-    <spam class="limit">}</spam>
+    <span class="limit">}</span>
 
     <div class="by">
       con <fa :icon="['fas', 'heart']" /> por Jorge Chato
@@ -23,12 +23,12 @@
 <style lang="scss" scoped>
 $youtube: #ff0000;
 $spotify: #1db954;
-$itunes: #D948DD;
+$itunes: white;
 $instagram: #c13584;
-$color: rgba(white, .8);
+$color: rgba(white, .7);
 
 
-.footer{
+.footer__net{
   padding-top: 2em;
   padding-bottom: 2em;
   text-align: center;

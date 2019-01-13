@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo/Logo'
+import Logo from '~/components/Header/Logo'
 import Footer from '~/components/Footer'
 
 export default {

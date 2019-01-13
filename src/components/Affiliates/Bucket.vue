@@ -1,14 +1,14 @@
 <template>
-  <nuxt-link :to="'/mochila/'" class="tile" >
+  <nuxt-link :to="'/mochila#' + bucket.name | lowercase" class="tile" >
         <img
           class="tile__img"
-          :src="thumbnail"
-          :alt="name"/>
+          :src="bucket.thumbnail"
+          :alt="bucket.name"/>
 
         <div class="tile__details">
           <div class="tile__title">
-            <h2>{{name | capitalize}}</h2>
-            {{ description }}
+            <h2>{{ bucket.name | capitalize }}</h2>
+            {{ bucket.description }}
           </div>
         </div>
     </nuxt-link>
@@ -18,25 +18,10 @@
 export default{
   name: 'Bucket',
   props: {
-    thumbnail: {
-      type: String,
+    bucket: {
+      type: Object,
       required: true,
     },
-    name: {
-      type: String,
-      required: true,
-    },
-    description: {
-      type: String,
-    },
-    height: {
-      default: 499.094,
-      type: Number,
-    },
-    width: {
-      default: 250,
-      type: Number,
-    }
   }
 }
 </script>

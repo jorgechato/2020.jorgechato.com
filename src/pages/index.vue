@@ -3,7 +3,9 @@
 
     <Buckets />
 
-    <div class="container">
+    <Articles :articles="articles"/>
+
+    <div class="video__container">
       <iframe
         class="video"
         src="https://www.youtube.com/embed/kzFPp3WtL9M"
@@ -19,17 +21,26 @@
 
 <script>
 import Buckets from '~/components/Affiliates/Buckets'
+import Articles from '~/components/Articles'
 
 export default {
   components: {
-    Buckets
-  }
+    Buckets,
+    Articles,
+  },
+  data: () => ({
+    articles: [
+      "hello world",
+      "<i>foo</i>",
+      "<b>foo</b>",
+    ],
+  }),
 }
 </script>
 
 <style lang="scss" scoped>
 
-.container {
+.video__container {
   margin-top: 50px;
   position: relative;
   width: 100%;

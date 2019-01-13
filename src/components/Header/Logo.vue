@@ -2,7 +2,7 @@
   <nuxt-link :to="'/'" class="logo">
 
     <div class="logo__top">
-    J<spam class="circle"></spam>RGE
+    J<span class="circle"></span>RGE
     </div>
 
     <div class="logo__bottom front">
@@ -14,19 +14,19 @@
     </Parallax>
 
     <div class="logo__bottom front">
-    T<spam class="circle"></spam>
+    T<span class="circle"></span>
     </div>
 
   </nuxt-link>
 </template>
 
 <script>
-import Parallax from '~/components/Logo/Parallax'
+import Parallax from '~/components/Header/Parallax'
 
 export default {
   name: 'Logo',
   components: {
-    Parallax
+    Parallax,
   },
   data: () => ({
     thumbnail: "http://www.technocrazed.com/wp-content/uploads/2015/12/Japan-wallpaper-20.jpg",
@@ -47,7 +47,8 @@ export default {
   display: block;
   text-decoration: none;
   color: white;
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
 
   .circle {
     width: .8em;

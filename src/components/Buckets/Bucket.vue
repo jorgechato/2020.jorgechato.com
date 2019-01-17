@@ -1,17 +1,19 @@
 <template>
   <nuxt-link :to="'/mochila#' + bucket.name | lowercase" class="tile" >
-        <img
-          class="tile__img"
-          :src="bucket.thumbnail"
-          :alt="bucket.name"/>
 
-        <div class="tile__details">
-          <div class="tile__title">
-            <h2>{{ bucket.name | capitalize }}</h2>
-            {{ bucket.description }}
-          </div>
-        </div>
-    </nuxt-link>
+    <img
+      class="tile__img"
+      :src="bucket.thumbnail"
+      :alt="bucket.name"/>
+
+    <div class="tile__details">
+      <div class="tile__title">
+        <h2>{{ bucket.name | capitalize }}</h2>
+        {{ bucket.description }}
+      </div>
+    </div>
+
+  </nuxt-link>
 </template>
 
 <script>

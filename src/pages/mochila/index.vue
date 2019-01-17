@@ -27,7 +27,19 @@ export default {
         affiliates: [
           {
           id: 1,
-          name: "",
+          name: "test",
+          },
+          {
+          id: 1,
+          name: "test",
+          },
+          {
+          id: 1,
+          name: "test",
+          },
+          {
+          id: 1,
+          name: "test",
           },
         ],
       },
@@ -39,7 +51,7 @@ export default {
         affiliates: [
           {
           id: 1,
-          name: "",
+          name: "kb",
           },
         ],
       },
@@ -49,10 +61,6 @@ export default {
         description:"Muy pronto",
         thumbnail:"https://i.ytimg.com/vi/GcbsIv3QdFs/maxresdefault.jpg",
         affiliates: [
-          {
-          id: 1,
-          name: "",
-          },
         ],
       },
       {

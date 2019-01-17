@@ -2,12 +2,11 @@
   <section class="affiliate" :id="bucket.name | lowercase">
 
     <h3 class="header">{{ bucket.name | capitalize }}</h3>
-    <Affiliate
-      v-for="affiliate in bucket.affiliates"
-      :key="affiliate.id"
-      :affiliate="affiliate"/>
 
-    <div class="test"></div>
+      <Affiliate
+        v-for="affiliate in bucket.affiliates"
+        :key="affiliate.id"
+        :affiliate="affiliate"/>
 
   </section>
 </template>
@@ -32,10 +31,12 @@ export default {
 <style lang="scss" scoped>
 
 .header {
+  padding-top: 5em;
   margin-left: 2em;
 }
 
-.test{
-  height: 100vh;
+.row {
+  text-align: center;
 }
+
 </style>

@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import Buckets from '~/components/Affiliates/Buckets'
+import Buckets from '~/components/Buckets/Buckets'
 import Articles from '~/components/Articles'
 
 export default {

@@ -27,8 +27,8 @@
 </template>
 
 <script>
-import BucketMin from '~/components/Affiliates/BucketMin'
-import Bucket from '~/components/Affiliates/Bucket'
+import BucketMin from '~/components/Buckets/BucketMin'
+import Bucket from '~/components/Buckets/Bucket'
 import { showAt, hideAt } from 'vue-breakpoints'
 
 

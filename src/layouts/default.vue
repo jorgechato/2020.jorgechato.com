@@ -1,6 +1,8 @@
 <template>
   <div>
 
+    <Nav />
+
     <Logo />
 
     <nuxt/>
@@ -12,11 +14,13 @@
 
 <script>
 import Logo from '~/components/Header/Logo'
+import Nav from '~/components/Header/Nav'
 import Footer from '~/components/Footer'
 
 export default {
   components: {
     Logo,
+    Nav,
     Footer,
   }
 }
@@ -30,4 +34,16 @@ body {
   font-family: "futura";
   background: $mainColor;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: .3s color;
+}
+
+a:hover {
+  color: rgba(white, .7);
+  transition: .3s color;
+}
+
 </style>

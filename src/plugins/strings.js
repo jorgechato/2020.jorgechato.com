@@ -10,3 +10,8 @@ Vue.filter('lowercase', function (value) {
   if (!value) return ''
   return value.toString().toLowerCase()
 })
+
+Vue.filter('uppercase', function (value) {
+  if (!value) return ''
+  return value.toString().toUpperCase()
+})

@@ -3,7 +3,19 @@
 
     <Buckets />
 
-    <Articles :articles="articles"/>
+    <Todos :todos="todos"/>
+
+    <div class="podcast__container">
+      <iframe
+        src="https://open.spotify.com/embed/show/6HPGljWQbxmnxqhWNNMUpX"
+        width="100%"
+        height="380"
+        frameborder="0"
+        allowtransparency="true"
+        allow="encrypted-media">
+      </iframe>
+    </div>
+
 
     <div class="video__container">
       <iframe
@@ -21,18 +33,15 @@
 
 <script>
 import Buckets from '~/components/Buckets/Buckets'
-import Articles from '~/components/Articles'
+import Todos from '~/components/Todos'
 
 export default {
   components: {
     Buckets,
-    Articles,
+    Todos,
   },
   data: () => ({
-    articles: [
-      "hello world",
-      "<i>foo</i>",
-      "<b>foo</b>",
+    todos: [
     ],
   }),
 }
@@ -53,6 +62,12 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
+}
+.podcast__container {
+  text-align: center;
+  width: 85%;
+  margin: 2em auto 0 auto;
+  max-width: 500px;
 }
 
 </style>

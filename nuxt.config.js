@@ -50,7 +50,17 @@ module.exports = {
         imports: [
           {
             set: '@fortawesome/free-solid-svg-icons',
-            icons: ['faHeart']
+            icons: [
+              'faHeart',
+              'faCheck',
+            ]
+          },
+          {
+            set: '@fortawesome/free-regular-svg-icons',
+            icons: [
+              'faCheckSquare',
+              'faSquare',
+            ]
           },
           {
             set: '@fortawesome/fontawesome-free-brands',
